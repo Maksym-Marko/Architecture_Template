@@ -1,0 +1,73 @@
+
+body{
+	font-family: 'Raleway-Medium';
+	background-color: #ffffff;	
+	@include box-sizing;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+h1, h2, h3, h4{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* centering blocks */
+.conteiner-horisontal{
+	padding: 0px;
+	width: 100%;
+	position: relative;	
+	float: left;
+}
+.horisontal-line{
+	max-width: 1920px;		
+	margin: 0px auto;	
+	position: relative;
+	padding: 0px;
+}
+.conteiner-center{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0px auto;
+	position: relative;
+	padding: 0px;
+	@include box-sizing;
+}
+
+/* Lists */
+ul{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	& li{
+		list-style-type: none;
+	}
+}
+
+/* form */
+::-webkit-input-placeholder{
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 24px;
+}
+::-moz-placeholder{
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 24px;
+}
+:-moz-placeholder{
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 24px;
+}
+:-ms-input-placeholder{
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 24px;
+}
+:-o-input-placeholder{
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 24px;
+}

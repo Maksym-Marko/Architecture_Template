@@ -1,0 +1,127 @@
+/* font-family: "Montserrat-Bold"; */
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/montserrat/Montserrat-Bold.eot");
+  src: url("../fonts/montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "PlayfairDisplay-BoldItalic"; */
+@font-face {
+  font-family: "PlayfairDisplay-BoldItalic";
+  src: url("../fonts/playfair-display/PlayfairDisplay-BoldItalic/PlayfairDisplay-BoldItalic.eot");
+  src: url("../fonts/playfair-display/PlayfairDisplay-BoldItalic/PlayfairDisplay-BoldItalic?#iefix") format("embedded-opentype"), url("../fonts/playfair-display/PlayfairDisplay-BoldItalic/PlayfairDisplay-BoldItalic.woff") format("woff"), url("../fonts/playfair-display/PlayfairDisplay-BoldItalic/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "PlayfairDisplay-Italic"; */
+@font-face {
+  font-family: "PlayfairDisplay-Italic";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Italic/PlayfairDisplay-Italic.eot");
+  src: url("../fonts/playfair-display/PlayfairDisplay-Italic/PlayfairDisplay-Italic?#iefix") format("embedded-opentype"), url("../fonts/playfair-display/PlayfairDisplay-Italic/PlayfairDisplay-Italic.woff") format("woff"), url("../fonts/playfair-display/PlayfairDisplay-Italic/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "PlayfairDisplay-Regular"; */
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular/PlayfairDisplay-Regular.eot");
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular/PlayfairDisplay-Regular?#iefix") format("embedded-opentype"), url("../fonts/playfair-display/PlayfairDisplay-Regular/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/playfair-display/PlayfairDisplay-Regular/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Raleway-Bold"; */
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../fonts/raleway/Raleway-Bold/Raleway-Bold.eot");
+  src: url("../fonts/raleway/Raleway-Bold/Raleway-Bold?#iefix") format("embedded-opentype"), url("../fonts/raleway/Raleway-Bold/Raleway-Bold.woff") format("woff"), url("../fonts/raleway/Raleway-Bold/Raleway-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Raleway-Light"; */
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("../fonts/raleway/Raleway-Light/Raleway-Light.eot");
+  src: url("../fonts/raleway/Raleway-Light/Raleway-Light?#iefix") format("embedded-opentype"), url("../fonts/raleway/Raleway-Light/Raleway-Light.woff") format("woff"), url("../fonts/raleway/Raleway-Light/Raleway-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "Raleway-Medium"; */
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("../fonts/raleway/Raleway-Medium/Raleway-Medium.eot");
+  src: url("../fonts/raleway/Raleway-Medium/Raleway-Medium?#iefix") format("embedded-opentype"), url("../fonts/raleway/Raleway-Medium/Raleway-Medium.woff") format("woff"), url("../fonts/raleway/Raleway-Medium/Raleway-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+body {
+  font-family: 'Raleway-Medium';
+  background-color: #ffffff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #ffffff; }
+
+h1, h2, h3, h4 {
+  margin: 0px;
+  padding: 0px; }
+
+/* centering blocks */
+.conteiner-horisontal {
+  padding: 0px;
+  width: 100%;
+  position: relative;
+  float: left; }
+
+.horisontal-line {
+  max-width: 1920px;
+  margin: 0px auto;
+  position: relative;
+  padding: 0px; }
+
+.conteiner-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0px auto;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/* Lists */
+ul {
+  display: block;
+  margin: 0px;
+  padding: 0px; }
+  ul li {
+    list-style-type: none; }
+
+/* form */
+::-webkit-input-placeholder {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px; }
+
+::-moz-placeholder {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px; }
+
+:-moz-placeholder {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px; }
+
+:-ms-input-placeholder {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px; }
+
+:-o-input-placeholder {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px; }
+
+/* button style */
+/* head line */
+/* body */
+/* footer */
+
+/*# sourceMappingURL=style.css.map */
