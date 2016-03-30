@@ -13,10 +13,11 @@
 	<![endif]-->	
 	
 	<link rel="stylesheet" href="add/bootstrap/bootstrap-grid-3.3.1.min.css" />
-	<link rel="stylesheet" href="add/tabs/style.css" />	
-	<!-- jScrollPane -->
-	<link type="text/css" href="add/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all" />
 	<link rel="stylesheet" type="text/css" href="fonts/icons/stylesheet.css"/>
+	
+	<!-- STYLES CAROUSEL-->
+	<link rel="stylesheet" href="add/carousel_Touch/prrple.slider.css" type="text/css">
+		
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<!--[if gt IE 6]>	
 		<link rel="stylesheet" type="text/css" href="css/ie_style.css"/>
@@ -27,12 +28,99 @@
 <body>
 
 <!-- head -->
-<header class="conteiner-horisontal">
-	
+<header class="conteiner-horisontal" id="slider2">
+	<nav>
+		<div class="row">
+			<div class="col-md-2 col-sm-2 col-xs-3">
+				<div class="mx-logo"><a href="#"><img src="img/logo.png" alt="" /></a></div>
+			</div>
+			<div class="col-md-10 col-sm-10 col-xs-9">				
+				<div class="mx-headlihe">					
+					<ul class="mx-nav">
+						<li class="mx-active-nav"><a href="#">HOME</a></li>
+						<li><a href="#">PROJECTS</a></li>
+						<li><a href="#">WHAT WE DO</a></li>
+						<li><a href="#">ABOUT US</a></li>
+						<li><a href="#">CONTACT US</a></li>
+					</ul>					
+					<div class="mx-search visible-sm-block visible-md-block visible-lg-block">
+						<span id="mx-input-search" title="Search"></span>
+						<form action="" method="get">
+							<input type="text" name="search" value="" placeholder="Enter a search query" class="mx-input-search"/>
+							<input type="submit" value="search" class="mx-submit-search"/>
+						</form>						
+					</div>
+				</div>				
+			</div>	
+		</div>
+	</nav>
+	<section class="slider">
+		<div class="slider_area" itemscope itemtype="https://schema.org/AboutPage">
+				<article class="slide">		
+					<div class="mx-about-it">
+						<h2 itemprop="headline">Architecture Template</h2>
+						<h3 itemprop="offers">Built with Bootsrap</h3>
+						<span class="mx-button"><a href="#" itemprop="thumbnailUrl">LEARN MORE</a></span>
+					</div>				
+					<div class="mx-slide-img"><img src="img/slide1.jpg" itemprop="image"></div>												
+				</article>
+				<article class="slide">
+					<div class="mx-about-it">
+						<h2 itemprop="headline">Architecture Template</h2>
+						<h3 itemprop="offers">Stylized using Sass</h3>
+						<span class="mx-button"><a href="#" itemprop="thumbnailUrl">LEARN MORE</a></span>
+					</div>
+					<div class="mx-slide-img"><img src="img/slide2.jpg" itemprop="image"></div>						
+				</article>					
+				<article class="slide">
+					<div class="mx-about-it">
+						<h2 itemprop="headline">Architecture Template</h2>
+						<h3 itemprop="offers">CMS Implementation</h3>
+						<span class="mx-button"><a href="#" itemprop="thumbnailUrl">LEARN MORE</a></span>
+					</div>
+					<div class="mx-slide-img"><img src="img/slide3.jpg" itemprop="image"></div>						
+				</article>
+				<div class="mx-darck-photo"></div>
+		</div>
+		<div class="slider_nav"></div>
+		<a class="slide_left"></a>
+		<a class="slide_right"></a>
+	</section>		
 </header>
+
+<div class="mx-hide-block visible-xs-block">
+	<div class="mx-vis-button">
+		<div class="mx-search-hide">
+			<span id="mx-input-search-hide" title="Search"></span>
+			<form action="" method="get">
+				<input type="text" name="search" value="" placeholder="Enter a search query" class="mx-input-search-hide"/>
+				<input type="submit" value="search" class="mx-submit-search-hide"/>
+			</form>						
+		</div>
+		<div class="mx-hide-menu">
+			<img src="img/hide-menu.png" alt="" title="Menu" id="mx-show-menu"/>
+		</div>
+	</div>
+	<ul class="mx-nav-hide">
+		<li class="mx-active-nav"><a href="#">HOME</a></li>
+		<li><a href="#">PROJECTS</a></li>
+		<li><a href="#">WHAT WE DO</a></li>
+		<li><a href="#">ABOUT US</a></li>
+		<li><a href="#">CONTACT US</a></li>
+	</ul>	
+</div>
+
+
 
 
 <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+
+<!-- STYLES CAROUSEL-->
+<script src="add/carousel_Touch/modernizr.js"></script>
+<script src="add/carousel_Touch/jquery.touchSwipe.1.6.min.js"></script>
+<script src="add/carousel_Touch/prrple.slider.js"></script>
+<script src="add/carousel_Touch/scripts.js"></script>
+	
 <!--[if gt IE 6]>	
 	<script type="text/javascript" src="add/placeholder_ie.js"></script>
 	<script type="text/javascript" src="add/respond.min.js"></script>	

@@ -42,6 +42,8 @@ ul{
 	padding: 0px;
 	& li{
 		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
 	}
 }
 
@@ -49,25 +51,20 @@ ul{
 ::-webkit-input-placeholder{
 	color: #ffffff;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 14px;
 }
 ::-moz-placeholder{
 	color: #ffffff;
 	font-weight: 400;
-	font-size: 24px;
-}
-:-moz-placeholder{
-	color: #ffffff;
-	font-weight: 400;
-	font-size: 24px;
+	font-size: 14px;
 }
 :-ms-input-placeholder{
 	color: #ffffff;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 14px;
 }
 :-o-input-placeholder{
 	color: #ffffff;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 14px;
 }
