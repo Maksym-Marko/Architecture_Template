@@ -78,6 +78,10 @@ $(document).ready(function(){
 		}		
 	});
 	
+	//safari
+	if(navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1){					
+	}
+	
 	
 })
 

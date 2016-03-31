@@ -1,0 +1,40 @@
+.mx-search > span {
+    width: 14px;
+    height: 14px;
+    margin-top: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: 2px 0px;
+    cursor: pointer; }
+    .mx-search > span:hover {
+      background-position: 2px -15px; }
+      
+.mx-search-hide > span {
+    width: 14px;
+    height: 14px;
+    margin: 0px 20px;
+    display: block;
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: 2px 0px;
+    cursor: pointer; }
+    .mx-search-hide > span:hover {
+      background-position: 2px -15px; }
+      
+.mx-hide-block .mx-vis-button .mx-hide-menu > span {
+       width: 14px;
+       height: 14px;
+       display: block;
+       background-image: url(../img/hide-menu.png);
+       background-repeat: no-repeat;
+       background-position: 0px 0px; }
+       .mx-hide-block .mx-vis-button .mx-hide-menu > span:hover {
+         background-position: 0px -15px; }
+         
+.arhci-fonts{
+	display: none;
+}
+   

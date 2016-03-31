@@ -1,5 +1,8 @@
 
-/* head line */
+/*
+* head 
+*/
+
 header{
 	max-height: 600px;
 	display: block;
@@ -93,17 +96,16 @@ header{
 
 .mx-search{
 	float: left;
-	& > span{
-		width: 14px;
-		height: 14px;
-		margin-top: 18px;
+	& > i{
+		margin-top: 12px;
 		margin-left: 10px;
 		margin-right: 10px;
-		display: block;
-		background-image: url(../img/lupa.png);
-		background-repeat: no-repeat;
-		background-position: top center;
+		font-size: 14px;
 		cursor: pointer;
+		color: $yellow_color;
+		&:hover{
+			color: #ffffff;
+		}
 	}
 	& > form{
 		position: absolute;
@@ -172,9 +174,15 @@ header{
 			display: block;
 			float: left;
 			margin-left: 10px;
-			& > img{
-				width: 100%;
+			& > i{
+				display: block;
+				margin-top: -3px;
+				font-size: 14px;
+				color: $yellow_color;
 				cursor: pointer;
+				&:hover{
+					color: #ffffff;
+				}
 			}
 		}
 	}
@@ -220,15 +228,15 @@ header{
 .mx-search-hide{
 	display: block;
 	float: left;
-	& > span{
-		width: 14px;
-		height: 14px;
-		margin: 0px 20px;
+	& > i{
+		margin: -4px 20px;
 		display: block;
-		background-image: url(../img/lupa.png);
-		background-repeat: no-repeat;
-		background-position: top center;
 		cursor: pointer;
+		font-size: 14px;
+		color: $yellow_color;
+		&:hover{
+			color: #ffffff;
+		}
 	}
 	& > form{
 		z-index: 999;
@@ -428,10 +436,12 @@ header{
 		width: 10px;
 		height: 10px;
 		margin: 0px 5px;
+		border: 1px solid #ffffff;
 		background-color: #ffffff;		
 		cursor: pointer;
 	}
 	& .current{
+		border: 1px solid $yellow_color;
 		background-color: $yellow_color !important;
 	}
 }

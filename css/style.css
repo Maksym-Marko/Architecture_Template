@@ -1,3 +1,11 @@
+/*
+* ############################################
+* # Author: Marko Maksym                     #
+* # Project name: Architecture Template      #
+* # Date of creation:                        #
+* # Last Modified:                           #
+* ############################################
+*/
 /* font-family: "Montserrat-Bold"; */
 @font-face {
   font-family: "Montserrat-Bold";
@@ -49,6 +57,7 @@
   font-weight: normal; }
 body {
   font-family: 'Raleway-Medium';
+  color: #000000;
   background-color: #ffffff;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -117,7 +126,9 @@ ul {
   font-size: 14px; }
 
 /* button style */
-/* head line */
+/*
+* head 
+*/
 header {
   max-height: 600px;
   display: block;
@@ -198,17 +209,15 @@ header {
 
 .mx-search {
   float: left; }
-  .mx-search > span {
-    width: 14px;
-    height: 14px;
-    margin-top: 18px;
+  .mx-search > i {
+    margin-top: 12px;
     margin-left: 10px;
     margin-right: 10px;
-    display: block;
-    background-image: url(../img/lupa.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    cursor: pointer; }
+    font-size: 14px;
+    cursor: pointer;
+    color: #ffb932; }
+    .mx-search > i:hover {
+      color: #ffffff; }
   .mx-search > form {
     position: absolute;
     display: block;
@@ -269,9 +278,14 @@ header {
       display: block;
       float: left;
       margin-left: 10px; }
-      .mx-hide-block .mx-vis-button .mx-hide-menu > img {
-        width: 100%;
+      .mx-hide-block .mx-vis-button .mx-hide-menu > i {
+        display: block;
+        margin-top: -3px;
+        font-size: 14px;
+        color: #ffb932;
         cursor: pointer; }
+        .mx-hide-block .mx-vis-button .mx-hide-menu > i:hover {
+          color: #ffffff; }
   .mx-hide-block .mx-nav-hide {
     width: 200px;
     display: block;
@@ -306,15 +320,14 @@ header {
 .mx-search-hide {
   display: block;
   float: left; }
-  .mx-search-hide > span {
-    width: 14px;
-    height: 14px;
-    margin: 0px 20px;
+  .mx-search-hide > i {
+    margin: -4px 20px;
     display: block;
-    background-image: url(../img/lupa.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 14px;
+    color: #ffb932; }
+    .mx-search-hide > i:hover {
+      color: #ffffff; }
   .mx-search-hide > form {
     z-index: 999;
     position: absolute;
@@ -492,12 +505,98 @@ header {
     width: 10px;
     height: 10px;
     margin: 0px 5px;
+    border: 1px solid #ffffff;
     background-color: #ffffff;
     cursor: pointer; }
   .slider_nav .current {
+    border: 1px solid #ffb932;
     background-color: #ffb932 !important; }
 
-/* body */
+/* 
+* body
+*/
+/* our services */
+.mx-our-services-wrap {
+  min-height: 450px; }
+  .mx-our-services-wrap > h1 {
+    width: 100%;
+    font-family: "PlayfairDisplay-Italic";
+    text-align: center;
+    font-size: 32px;
+    margin-top: 50px; }
+  .mx-our-services-wrap > span {
+    width: 31px;
+    font-family: "PlayfairDisplay-Italic";
+    text-align: center;
+    font-size: 32px;
+    display: block;
+    margin: 0px auto; }
+    .mx-our-services-wrap > span::after {
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      content: "";
+      margin: 22px 0px 0px -90px;
+      background-image: url(../img/line.png);
+      background-repeat: no-repeat; }
+    .mx-our-services-wrap > span::before {
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      content: "";
+      margin: 22px 0px 0px 45px;
+      background-image: url(../img/line.png);
+      background-repeat: no-repeat; }
+  .mx-our-services-wrap > p {
+    font-size: 14px;
+    color: #4a4a4a;
+    text-align: center;
+    display: block;
+    margin: 20px 15px; }
+  .mx-our-services-wrap .mx-services-block {
+    display: block;
+    margin: 40px 30px 30px 30px; }
+    .mx-our-services-wrap .mx-services-block a {
+      border: none; }
+    .mx-our-services-wrap .mx-services-block article {
+      max-width: 250px;
+      display: block; }
+      .mx-our-services-wrap .mx-services-block article > div {
+        width: 95px;
+        height: 95px;
+        display: block;
+        background-color: #f0f0f0;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px; }
+        .mx-our-services-wrap .mx-services-block article > div > i {
+          text-align: center;
+          line-height: 95px;
+          font-size: 28px;
+          color: #000000; }
+      .mx-our-services-wrap .mx-services-block article > h3 {
+        font-family: "Raleway-Bold";
+        font-size: 18px;
+        color: #000000;
+        margin-top: 26px; }
+      .mx-our-services-wrap .mx-services-block article > p {
+        font-size: 13px;
+        color: #474747;
+        margin-top: 10px; }
+      .mx-our-services-wrap .mx-services-block article > span {
+        width: 65px;
+        display: block;
+        border: 1px solid #000000; }
+      .mx-our-services-wrap .mx-services-block article:hover > span {
+        border: 1px solid #ffb932; }
+      .mx-our-services-wrap .mx-services-block article:hover > h3 {
+        color: #ffb932; }
+      @media only screen and (max-width: 768px) {
+        .mx-our-services-wrap .mx-services-block article {
+          max-width: 260px;
+          margin: 0px auto;
+          margin-bottom: 40px; } }
+
 /* footer */
 
 /*# sourceMappingURL=style.css.map */

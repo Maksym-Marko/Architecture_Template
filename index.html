@@ -1,3 +1,11 @@
+<!--
+* ############################################
+* # Author: Marko Maksym                     #
+* # Project name: Architecture Template      #
+* # Date of creation:                        #
+* # Last Modified:                           #
+* ############################################
+-->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
@@ -7,19 +15,23 @@
 	<meta http-equiv="x-rim-auto-match" content="none"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>		
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			
 	<!--[if lt IE 9]> 
 		<script type="text/javascript" src="add/html5shiv.min.js"></script> 
-	<![endif]-->	
+	<![endif]-->		
 	
 	<link rel="stylesheet" href="add/bootstrap/bootstrap-grid-3.3.1.min.css" />
 	<link rel="stylesheet" type="text/css" href="fonts/icons/stylesheet.css"/>
+	<link rel="stylesheet" type="text/css" href="fonts/menu-button/stylesheet.css"/>
 	
 	<!-- STYLES CAROUSEL-->
 	<link rel="stylesheet" href="add/carousel_Touch/prrple.slider.css" type="text/css">
 		
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<!--[if gt IE 6]>	
+	<script type="text/javascript" src="add/respond.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>		
+
+	<!--[if gt IE 6]>			
 		<link rel="stylesheet" type="text/css" href="css/ie_style.css"/>
 	<![endif]-->	
 	
@@ -36,7 +48,7 @@
 			</div>
 			<div class="col-md-10 col-sm-10 col-xs-9">				
 				<div class="mx-headlihe">					
-					<ul class="mx-nav">
+					<ul class="mx-nav visible-sm-block visible-md-block visible-lg-block">
 						<li class="mx-active-nav"><a href="#">HOME</a></li>
 						<li><a href="#">PROJECTS</a></li>
 						<li><a href="#">WHAT WE DO</a></li>
@@ -44,7 +56,10 @@
 						<li><a href="#">CONTACT US</a></li>
 					</ul>					
 					<div class="mx-search visible-sm-block visible-md-block visible-lg-block">
-						<span id="mx-input-search" title="Search"></span>
+						<!--[if gt IE 6]>
+						<span class="mx-ie-lupa" id="mx-input-search" title="Search"></span>
+						<![endif]-->
+						<i class="arhci-fonts a-f-mag_glass" id="mx-input-search"></i>
 						<form action="" method="get">
 							<input type="text" name="search" value="" placeholder="Enter a search query" class="mx-input-search"/>
 							<input type="submit" value="search" class="mx-submit-search"/>
@@ -88,17 +103,24 @@
 	</section>		
 </header>
 
+<!-- hide block < 768px -->
 <div class="mx-hide-block visible-xs-block">
 	<div class="mx-vis-button">
-		<div class="mx-search-hide">
-			<span id="mx-input-search-hide" title="Search"></span>
+		<div class="mx-search-hide">			
+			<!--[if gt IE 6]>	
+				<span id="mx-input-search-hide" title="Search"></span>
+			<![endif]-->
+			<i class="arhci-fonts a-f-mag_glass" id="mx-input-search-hide"></i>
 			<form action="" method="get">
 				<input type="text" name="search" value="" placeholder="Enter a search query" class="mx-input-search-hide"/>
 				<input type="submit" value="search" class="mx-submit-search-hide"/>
 			</form>						
 		</div>
-		<div class="mx-hide-menu">
-			<img src="img/hide-menu.png" alt="" title="Menu" id="mx-show-menu"/>
+		<div class="mx-hide-menu">		
+			<!--[if gt IE 6]>	
+				<span title="Menu" id="mx-show-menu"></span>
+			<![endif]-->
+			<i class="menu-button menu-button-m" id="mx-show-menu"></i>
 		</div>
 	</div>
 	<ul class="mx-nav-hide">
@@ -110,21 +132,70 @@
 	</ul>	
 </div>
 
-
+<!-- our services -->
+<section class="conteiner-horisontal">
+	<div class="conteiner-center mx-our-services-wrap" itemscope itemtype="https://schema.org/Thing">
+		<h1 itemprop="alternateName">Our Services</h1>
+		<span>&</span>
+		<p itemprop="description">Built is the template designed specially for architectures and builders, So start building you web site with built.</p>
+		<div class="mx-services-block">
+			<div class="row" itemscope itemtype="http://schema.org/Service">
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<a itemprop="url" href="#">
+						<article>
+							<div><i class="arhci-fonts a-f-zip"></i></div>
+							<h3 itemprop="ServiceType">Consulting</h3>
+							<p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+							<span></span>
+						</article>
+					</a>	
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<a itemprop="url" href="#">
+						<article>
+							<div><i class="arhci-fonts a-f-pencil"></i></div>
+							<h3 itemprop="ServiceType">Design</h3>
+							<p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+							<span></span>
+						</article>
+					</a>	
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<a itemprop="url" href="#">
+						<article>
+							<div><i class="arhci-fonts a-f-clock"></i></div>
+							<h3 itemprop="ServiceType">Planning</h3>
+							<p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+							<span></span>
+						</article>
+					</a>	
+				</div>				
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<a itemprop="url" href="#">
+						<article>
+							<div><i class="arhci-fonts a-f-house"></i></div>
+							<h3 itemprop="ServiceType">Building</h3>
+							<p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+							<span></span>
+						</article>
+					</a>	
+				</div>
+			</div>		
+		</div>
+	</div>
+</section>
 
 
 <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
-
+<!--[if gt IE 6]>	
+	<script type="text/javascript" src="add/placeholder_ie.js"></script>	
+<![endif]-->
 <!-- STYLES CAROUSEL-->
 <script src="add/carousel_Touch/modernizr.js"></script>
 <script src="add/carousel_Touch/jquery.touchSwipe.1.6.min.js"></script>
 <script src="add/carousel_Touch/prrple.slider.js"></script>
 <script src="add/carousel_Touch/scripts.js"></script>
-	
-<!--[if gt IE 6]>	
-	<script type="text/javascript" src="add/placeholder_ie.js"></script>
-	<script type="text/javascript" src="add/respond.min.js"></script>	
-<![endif]-->
+
 <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

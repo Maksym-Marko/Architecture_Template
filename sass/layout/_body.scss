@@ -1,2 +1,104 @@
 
-/* body */
+/* 
+* body
+*/
+
+	/* our services */
+.mx-our-services-wrap{
+	min-height: 450px;	
+	& > h1{
+		width: 100%;
+		font-family: "PlayfairDisplay-Italic";
+		text-align: center;
+		font-size: 32px;
+		margin-top: 50px;
+	}
+	& > span{
+		width: 31px;
+		font-family: "PlayfairDisplay-Italic";
+		text-align: center;
+		font-size: 32px;
+		display: block;
+		margin: 0px auto;
+		&::after{
+			position: absolute;
+			width: 50px;
+			height: 4px;
+			content: "";
+			margin: 22px 0px 0px -90px;
+			background-image: url(../img/line.png);
+   			background-repeat: no-repeat;
+
+		}
+		&::before{
+			position: absolute;
+			width: 50px;
+			height: 4px;
+			content: "";
+			margin: 22px 0px 0px 45px;
+			background-image: url(../img/line.png);
+   			background-repeat: no-repeat;
+
+		}
+	}	
+	& > p{
+		font-size: 14px;
+		color: $gray;
+		text-align: center;
+		display: block;
+		margin: 20px 15px;	
+	}
+	& .mx-services-block{
+		display: block;
+		margin: 40px 30px 30px 30px;
+		& a{
+			border: none;
+		}
+		& article{
+			max-width: 250px;
+			display: block;
+			& > div{
+				width: 95px;
+				height: 95px;
+				display: block;
+				background-color: #f0f0f0;
+				@include border-radius(3px);
+				& > i{
+					text-align: center;
+					line-height: 95px;
+					font-size: 28px;
+					color: #000000;
+				}
+			}
+			& > h3{
+				font-family: "Raleway-Bold";
+				font-size: 18px;
+				color: #000000;
+				margin-top: 26px;
+			}
+			& > p{
+				font-size: 13px;
+				color: #474747;
+				margin-top: 10px;
+			}
+			& > span{
+				width: 65px;
+				display: block;
+				border: 1px solid #000000;
+			}
+			&:hover{
+				& > span{
+					border: 1px solid $yellow_color;
+				}
+				& >  h3{
+					color: $yellow_color;
+				}
+			}
+			@media only screen and (max-width: 768px){
+				max-width: 260px;
+				margin: 0px auto;
+				margin-bottom: 40px;
+			}
+		}		
+	}
+}

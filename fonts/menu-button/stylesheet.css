@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'menu-button';
+    src: url('men-webfont.eot');
+    src: url('men-webfont.eot?#iefix') format('embedded-opentype'),
+         url('men-webfont.woff2') format('woff2'),
+         url('men-webfont.woff') format('woff'),
+         url('men-webfont.ttf') format('truetype'),
+         url('men-webfont.svg#menu-button') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.menu-button{
+	font-family: 'menu-button';
+	font-size: 16px;
+	display: block;
+	font-style: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.menu-button-m::before{
+	content: 'm';
+}
