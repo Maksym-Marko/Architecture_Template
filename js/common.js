@@ -16,6 +16,7 @@ $(document).ready(function(){
 		allowPageScroll:'vertical',
 		excludedElements: ''
 	});
+	
 	var resize;
 	$(window).resize(function(){
 		clearTimeout(resize);
@@ -23,7 +24,7 @@ $(document).ready(function(){
 			$('.slider').each(function(){
 				$(this).prrpleSliderResize();
 			});
-		},1000);
+		},500);
 	});
 	
 	//navigation
@@ -78,10 +79,9 @@ $(document).ready(function(){
 		}		
 	});
 	
-	//safari
-	if(navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1){					
-	}
-	
-	
+	//parallax
+	$.stellar({
+		responsive: true
+	});
 })
 

@@ -102,3 +102,399 @@
 		}		
 	}
 }
+
+/* paralax section */
+.mx-paralax-wrap{
+	min-height: 220px;
+	display: block;
+	background-image: url(../img/parallax1.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+	& .mx-paralax-gloss{
+		position: absolute;
+		width: 100%;
+		height: 250px;
+		background-image: url(../img/darck-photo.png);
+		background-repeat: repeat;
+	}
+	& .mx-paralax-cont{
+		height: auto;
+		display: table;		
+		& > p{			
+			display: block;
+			font-family: "PlayfairDisplay-Regular";
+			font-size: 23px;
+			margin: 90px 30px;
+			text-align: center;
+			color: #e9e9e9;
+			@media only screen and (max-width: 992px){
+				font-size: 20px;
+				margin: 90px 15px;
+			}
+			@media only screen and (max-width: 768px){
+				font-size: 18px;
+			}
+			@media only screen and (max-width: 500px){
+				font-size: 16px;
+			}
+		}		
+	}
+}
+
+/* our projects */
+.mx-our-projects-wrap{
+	min-height: 760px;
+	padding-top: 50px;
+	display: block;
+	background-image: url(../img/bg_our_poj.png);
+	background-repeat: repeat-y;
+	background-position: top center;
+	& .mx-our-projects-center{
+		display: table;
+		& > h2{
+			width: 100%;
+			font-family: "PlayfairDisplay-Italic";
+			text-align: center;
+			font-size: 32px;
+		}
+		& > span{
+			width: 31px;
+			font-family: "PlayfairDisplay-Italic";
+			text-align: center;
+			font-size: 32px;
+			display: block;
+			margin: 0px auto;
+			&::after{
+				position: absolute;
+				width: 50px;
+				height: 4px;
+				content: "";
+				margin: 22px 0px 0px -90px;
+				background-image: url(../img/line.png);
+	   			background-repeat: no-repeat;
+
+			}
+			&::before{
+				position: absolute;
+				width: 50px;
+				height: 4px;
+				content: "";
+				margin: 22px 0px 0px 45px;
+				background-image: url(../img/line.png);
+	   			background-repeat: no-repeat;
+
+			}
+		}
+		& > p{
+			font-size: 14px;
+			color: $gray;
+			text-align: center;
+			display: block;
+			margin: 20px 15px;	
+		}
+		& > nav{
+			width: 100%;
+			display: block;
+			float: left;
+			text-align: center;
+			& > ul{
+				max-width: 690px;
+				display: block;
+				margin: 0px auto;
+				& > li{
+					float: left;
+					margin: 20px 14px;
+					& > a{
+						position: relative;
+						font-family: "Montserrat-Bold";
+						color: $gray;
+						font-size: 14px;
+						padding: 10px 0px;
+						&:hover{
+							color: #131313;
+							& > span{
+								position: absolute;
+								width: 30px;
+								display: block;
+								left: 50%;
+								margin-left: -15px;
+								bottom: 0px;
+								border: 1px solid #131313;
+							}
+						}
+					}
+				}
+			}
+		}
+		& .mx-ready-projects{
+			position: relative;
+			display: block;
+			float: left;			
+			& .mx-ready-projects-one-pattern-wrap{
+				position: relative;
+				width: 64%;
+				max-height: 380px;
+				display: block;
+				float: left;
+				margin: 3% 0% 3% 3%;
+				@media only screen and (max-width: 768px){
+					width: 100%;
+					margin: 0%;
+					height: auto;
+					max-height: 4000px;
+				}
+				& .mx-ready-projects-big{
+					position: relative;
+					width: 50%;
+					max-height: 360px;
+					display: block;
+					float: left;
+					overflow: hidden;
+					@media only screen and (max-width: 950px){
+						max-height: 300px;
+					}
+					@media only screen and (max-width: 900px){
+						max-height: 250px;
+					}
+					@media only screen and (max-width: 768px){
+						width: 100%;
+						float: none;
+						max-width: 360px;
+						margin: 0px auto;
+					}
+					& > img{
+						width: 570px;
+						margin-left: -26%;
+						@media only screen and (max-width: 950px){
+							width: 480px;
+						}
+						@media only screen and (max-width: 900px){
+							width: 380px;
+						}
+						@media only screen and (max-width: 768px){
+							width: 100%;
+							margin-left: 0%
+						}
+					}
+				}
+				& .mx-ready-projects-colect-pro{
+					width: 50%;
+					height: 360px;
+					max-height: 380px;
+					display: block;
+					float: left;				
+					@media only screen and (max-width: 950px){
+						max-height: 300px;
+					}
+					@media only screen and (max-width: 900px){
+						max-height: 250px;
+					}
+					@media only screen and (max-width: 768px){
+						width: 100%;
+						max-height: 3000px;
+					}
+					& .mx-ready-projects-colect-pro1{
+						width: 100%;
+						height: 50%;
+						display: block;
+						float: left;
+						overflow: hidden;
+						@media only screen and (max-width: 768px){
+							height: auto;
+						}
+						& > img{
+							width: 100%;
+							@media only screen and (max-width: 768px){
+								width: 100%;
+								height: auto;
+							}
+						}
+					}
+					& .mx-ready-projects-colect-pro2{
+						width: 50%;
+						height: 50%;
+						display: block;
+						float: left;
+						overflow: hidden;
+						@media only screen and (max-width: 768px){
+							width: 100%;
+							height: auto;
+						}
+						& > img{
+							width: 180%;
+							margin-left: -45%;
+							@media only screen and (max-width: 950px){
+								width: 160%;
+								margin-left: -40%;
+							}
+							@media only screen and (max-width: 900px){
+								width: 154%;
+								margin-left: -40%;
+							}
+							@media only screen and (max-width: 768px){
+								width: 100%;
+								margin-left: 0%;
+							}
+						}
+					}
+					& .mx-ready-projects-colect-pro3{
+						width: 50%;
+						height: 50%;
+						display: block;
+						float: left;
+						overflow: hidden;
+						@media only screen and (max-width: 768px){
+							width: 100%;
+							height: auto;
+						}
+						& > img{
+							width: 180%;
+							margin-left: -44%;
+							@media only screen and (max-width: 900px){
+								width: 160%;
+								margin-left: -30%;
+							}
+							@media only screen and (max-width: 768px){
+								width: 100%;
+								margin-left: 0%;
+							}
+						}
+					}
+					@media only screen and (max-width: 768px){
+						width: 100%;
+						float: none;
+						max-width: 360px;
+						margin: 0px auto;
+					}
+				}
+			}
+			& .mx-ready-projects-two-pattern-wrap{
+				position: relative;
+				width: 30%;
+				max-height: 360px;
+				display: block;
+				float: left;
+				margin: 3% 3% 3% 0%;
+				@media only screen and (max-width: 950px){
+					max-height: 300px;
+				}
+				@media only screen and (max-width: 900px){
+					max-height: 250px;
+				}
+				@media only screen and (max-width: 768px){
+					width: 100%;
+					margin: 0%;
+					display: table;
+				}
+				& .mx-ready-projects-two-big{
+					width: 44%;					
+					height: 100%;					
+					display: block;
+					float: left;
+					overflow: hidden;				
+					@media only screen and (max-width: 768px){
+						width: 100%;
+						float: none;
+						max-width: 360px;
+						margin: 0px auto;
+					}
+					& > img{
+						width: 530px;
+						margin-top: 10px;
+						margin-left: -200px;
+						@media only screen and (max-width: 950px){
+							margin-top: 0px;
+							width: 455px;
+							margin-left: -170px;
+						}
+						@media only screen and (max-width: 900px){
+							width: 380px;
+							margin-left: -135px;
+						}
+						@media only screen and (max-width: 768px){
+							width: 100%;
+							margin-left: 0px;
+						}
+					}
+				}
+				& .mx-ready-projects-two-colect-pro{
+					width: 56%;
+					height: 100%;
+					height: 360px;
+					display: block;	
+					float: left;	
+					overflow: hidden;
+					@media only screen and (max-width: 950px){
+						max-height: 300px;
+					}
+					@media only screen and (max-width: 900px){
+						max-height: 250px;
+					}		
+					@media only screen and (max-width: 768px){
+						width: 100%;
+						float: none;
+						max-width: 360px;
+						margin: 0px auto;
+						margin-bottom: 30px;
+						display: table;
+					}				
+					& .mx-ready-projects-two-colect-pro1{
+						width: 100%;
+						height: 50%;
+						display: block;								
+						overflow: hidden;	
+						@media only screen and (max-width: 768px){
+							height: auto;
+						}					
+						& > img{
+							width: 274px;
+							margin-left: -50%;
+							@media only screen and (max-width: 950px){
+								width: 250px;
+								margin-left: -45%;
+							}
+							@media only screen and (max-width: 900px){
+								width: 150%;
+								margin-left: -45%;
+							}
+							@media only screen and (max-width: 768px){
+								width: 100%;
+								margin-left: 0%;
+							}	
+						}
+					}
+					& .mx-ready-projects-all{
+						position: relative;
+						width: 100%;
+						height: 50%;
+						display: table;		
+						background-color: #ffffff;
+						overflow: hidden;						
+						@media only screen and (max-width: 768px){
+							height: 200px;
+							display: table;
+						}
+						& > h4{
+							font-family: "Montserrat-Bold";
+							font-size: 14px;
+							color: #131313;
+							text-align: center;
+							width: 100%;
+							margin: 45% auto;
+							@media only screen and (max-width: 950px){
+								font-size: 12px;
+							}
+							@media only screen and (max-width: 900px){
+								font-size: 10px;
+								margin: 40% auto;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
