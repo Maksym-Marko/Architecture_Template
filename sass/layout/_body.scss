@@ -278,7 +278,7 @@
 							width: 100%;
 							margin-left: 0%
 						}
-					}
+					}					
 				}
 				& .mx-ready-projects-colect-pro{
 					width: 50%;
@@ -297,6 +297,7 @@
 						max-height: 3000px;
 					}
 					& .mx-ready-projects-colect-pro1{
+						position: relative;
 						width: 100%;
 						height: 50%;
 						display: block;
@@ -314,6 +315,7 @@
 						}
 					}
 					& .mx-ready-projects-colect-pro2{
+						position: relative;
 						width: 50%;
 						height: 50%;
 						display: block;
@@ -341,6 +343,7 @@
 						}
 					}
 					& .mx-ready-projects-colect-pro3{
+						position: relative;
 						width: 50%;
 						height: 50%;
 						display: block;
@@ -390,11 +393,19 @@
 					display: table;
 				}
 				& .mx-ready-projects-two-big{
+					position: relative;
 					width: 44%;					
-					height: 100%;					
+					height: 100%;		
+					max-height: 360px;			
 					display: block;
 					float: left;
-					overflow: hidden;				
+					overflow: hidden;	
+					@media only screen and (max-width: 950px){
+						max-height: 300px;
+					}
+					@media only screen and (max-width: 900px){
+						max-height: 250px;
+					}			
 					@media only screen and (max-width: 768px){
 						width: 100%;
 						float: none;
@@ -403,7 +414,6 @@
 					}
 					& > img{
 						width: 530px;
-						margin-top: 10px;
 						margin-left: -200px;
 						@media only screen and (max-width: 950px){
 							margin-top: 0px;
@@ -442,6 +452,7 @@
 						display: table;
 					}				
 					& .mx-ready-projects-two-colect-pro1{
+						position: relative;
 						width: 100%;
 						height: 50%;
 						display: block;								
@@ -477,24 +488,198 @@
 							height: 200px;
 							display: table;
 						}
-						& > h4{
+						& a > h4{
+							position: relative;							
+							width: 100%;
+							padding: 4px 0px;
+							margin-top: 38%;
 							font-family: "Montserrat-Bold";
 							font-size: 14px;
 							color: #131313;
 							text-align: center;
-							width: 100%;
-							margin: 45% auto;
 							@media only screen and (max-width: 950px){
 								font-size: 12px;
 							}
 							@media only screen and (max-width: 900px){
 								font-size: 10px;
-								margin: 40% auto;
+								margin-top: 35%;
+							}
+							@media only screen and (max-width: 768px){
+								font-size: 12px;
+								margin-top: 25%;
+							}
+						}
+						& a > i{
+							position: relative;
+							color: #131313;
+							text-align: center;
+							margin-top: -5px;
+						}						
+						&:hover{
+							& .mx-ready-projects-all-hover{
+								position: absolute;
+								display: block;
+								width: 100%;
+								height: 100%;
+								background-color: $yellow_color;
+							}
+							& a > h4{
+								& > span{
+									position: absolute;
+									width: 80%;
+									display: block;
+									bottom: 0px;
+									left: 50%;
+									margin-left: -40%;
+									border: 1px solid #131313;
+									@media only screen and (max-width: 768px){
+										width: 120px;
+										left: 50%;
+										margin-left: -60px;
+									}
+								}
+							}
+							& a > i{
+								text-align: right;
+								margin-right: 18px;
+								@media only screen and (max-width: 768px){
+									margin-right: 33%;
+								}
 							}
 						}
 					}
 				}
 			}
+		}
+	}
+}
+
+.mx-ready-projects-hover{
+	display: none;
+}
+.mx-ready-projects-big:hover,
+.mx-ready-projects-colect-pro1:hover,
+.mx-ready-projects-colect-pro2:hover,
+.mx-ready-projects-colect-pro3:hover,
+.mx-ready-projects-two-big:hover,
+.mx-ready-projects-two-colect-pro1:hover{
+	& .mx-ready-projects-hover{
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		border: 3px solid $yellow_color;
+		background-image: url(../img/darck-photo.png);
+		& .mx-ready-projects-hover-title{							
+			position: absolute;
+			display: block;
+			margin: 30px;
+			@media only screen and (max-width: 950px){
+				margin: 25px;
+			}
+			@media only screen and (max-width: 900px){
+				margin: 20px;
+			}
+			& > h3{								
+				font-family: "Montserrat-Bold";
+				font-size: 14px;
+				color: #ffffff;
+				@media only screen and (max-width: 900px){
+					font-size: 12px;
+				}
+				@media only screen and (max-width: 768px){
+					font-size: 14px;
+				}
+			}
+			& > h4{
+				font-family: "Raleway-Medium";
+				font-size: 12px;
+				color: #e1e1e1;
+				margin-top: 4px;
+				@media only screen and (max-width: 900px){
+					font-size: 10px;
+				}
+				@media only screen and (max-width: 768px){
+					font-size: 12px;
+				}
+			}
+			& > span{
+				width: 40px;
+				display: block;
+				border: 1.5px solid $yellow_color;
+				margin-top: 9px;
+			}
+		}
+		& .mx-ready-projects-hover-button{
+			position: absolute;
+			width: 70px;
+			bottom: 30px;
+			right: 20px;
+			@media only screen and (max-width: 950px){
+				bottom: 20px;
+				right: 15px;
+			}
+			& a > span{
+				width: 30px;
+				height: 30px;
+				display: block;
+				float: left;
+				background-color: $yellow_color;
+				@include border-radius(3px);
+				& > i{
+					text-align: center;
+					line-height: 30px;
+					font-size: 14px;
+					color: #333333;
+				}
+			}
+			& a:first-child > span{
+				background-color: #353535;
+				margin-right: 10px;
+				& > i{
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
+.mx-small-block{
+	& .mx-ready-projects-hover-title{
+		margin: 10px !important;
+		@media only screen and (max-width: 768px){
+			margin: 20px !important;
+		}
+		& > h3{								
+			font-size: 12px !important;
+			@media only screen and (max-width: 900px){
+				font-size: 10px !important;
+			}
+			@media only screen and (max-width: 768px){
+				font-size: 14px !important;
+			}
+		}
+		& > h4{
+			font-size: 10px !important;
+			@media only screen and (max-width: 900px){
+				font-size: 8px !important;
+			}
+			@media only screen and (max-width: 768px){
+				font-size: 12px !important;
+			}
+		}
+		& > span{
+			border: 1px solid $yellow_color !important;
+			@media only screen and (max-width: 768px){
+				border: 1.5px solid $yellow_color !important;
+			}
+		}
+	}
+	& .mx-ready-projects-hover-button{
+		bottom: 15px !important;
+		right: 10px !important;
+		@media only screen and (max-width: 768px){
+			bottom: 20px !important;
+			right: 15px !important;
 		}
 	}
 }

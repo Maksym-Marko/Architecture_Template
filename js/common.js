@@ -83,5 +83,12 @@ $(document).ready(function(){
 	$.stellar({
 		responsive: true
 	});
+	
+	//popup
+	$(".mx-ready-projects-hover-button").magnificPopup({
+		delegate: "a",
+		type: "image",
+		gallery:{enabled:false}
+	});
 })
 

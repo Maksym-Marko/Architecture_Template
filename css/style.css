@@ -772,6 +772,7 @@ header {
               width: 100%;
               max-height: 3000px; } }
           .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-one-pattern-wrap .mx-ready-projects-colect-pro .mx-ready-projects-colect-pro1 {
+            position: relative;
             width: 100%;
             height: 50%;
             display: block;
@@ -787,6 +788,7 @@ header {
                   width: 100%;
                   height: auto; } }
           .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-one-pattern-wrap .mx-ready-projects-colect-pro .mx-ready-projects-colect-pro2 {
+            position: relative;
             width: 50%;
             height: 50%;
             display: block;
@@ -812,6 +814,7 @@ header {
                   width: 100%;
                   margin-left: 0%; } }
           .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-one-pattern-wrap .mx-ready-projects-colect-pro .mx-ready-projects-colect-pro3 {
+            position: relative;
             width: 50%;
             height: 50%;
             display: block;
@@ -857,11 +860,19 @@ header {
             margin: 0%;
             display: table; } }
         .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-big {
+          position: relative;
           width: 44%;
           height: 100%;
+          max-height: 360px;
           display: block;
           float: left;
           overflow: hidden; }
+          @media only screen and (max-width: 950px) {
+            .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-big {
+              max-height: 300px; } }
+          @media only screen and (max-width: 900px) {
+            .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-big {
+              max-height: 250px; } }
           @media only screen and (max-width: 768px) {
             .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-big {
               width: 100%;
@@ -870,7 +881,6 @@ header {
               margin: 0px auto; } }
           .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-big > img {
             width: 530px;
-            margin-top: 10px;
             margin-left: -200px; }
             @media only screen and (max-width: 950px) {
               .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-big > img {
@@ -907,6 +917,7 @@ header {
               margin-bottom: 30px;
               display: table; } }
           .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-two-colect-pro1 {
+            position: relative;
             width: 100%;
             height: 50%;
             display: block;
@@ -940,20 +951,250 @@ header {
               .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all {
                 height: 200px;
                 display: table; } }
-            .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all > h4 {
+            .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all a > h4 {
+              position: relative;
+              width: 100%;
+              padding: 4px 0px;
+              margin-top: 38%;
               font-family: "Montserrat-Bold";
               font-size: 14px;
               color: #131313;
-              text-align: center;
-              width: 100%;
-              margin: 45% auto; }
+              text-align: center; }
               @media only screen and (max-width: 950px) {
-                .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all > h4 {
+                .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all a > h4 {
                   font-size: 12px; } }
               @media only screen and (max-width: 900px) {
-                .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all > h4 {
+                .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all a > h4 {
                   font-size: 10px;
-                  margin: 40% auto; } }
+                  margin-top: 35%; } }
+              @media only screen and (max-width: 768px) {
+                .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all a > h4 {
+                  font-size: 12px;
+                  margin-top: 25%; } }
+            .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all a > i {
+              position: relative;
+              color: #131313;
+              text-align: center;
+              margin-top: -5px; }
+            .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all:hover .mx-ready-projects-all-hover {
+              position: absolute;
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-color: #ffb932; }
+            .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all:hover a > h4 > span {
+              position: absolute;
+              width: 80%;
+              display: block;
+              bottom: 0px;
+              left: 50%;
+              margin-left: -40%;
+              border: 1px solid #131313; }
+              @media only screen and (max-width: 768px) {
+                .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all:hover a > h4 > span {
+                  width: 120px;
+                  left: 50%;
+                  margin-left: -60px; } }
+            .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all:hover a > i {
+              text-align: right;
+              margin-right: 18px; }
+              @media only screen and (max-width: 768px) {
+                .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all:hover a > i {
+                  margin-right: 33%; } }
+
+.mx-ready-projects-hover {
+  display: none; }
+
+.mx-ready-projects-big:hover .mx-ready-projects-hover,
+.mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover,
+.mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover,
+.mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover,
+.mx-ready-projects-two-big:hover .mx-ready-projects-hover,
+.mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #ffb932;
+  background-image: url(../img/darck-photo.png); }
+  .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+  .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+  .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+  .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+  .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+  .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title {
+    position: absolute;
+    display: block;
+    margin: 30px; }
+    @media only screen and (max-width: 950px) {
+      .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+      .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+      .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+      .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+      .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+      .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title {
+        margin: 25px; } }
+    @media only screen and (max-width: 900px) {
+      .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+      .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+      .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+      .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+      .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title,
+      .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title {
+        margin: 20px; } }
+    .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+    .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+    .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+    .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+    .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+    .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3 {
+      font-family: "Montserrat-Bold";
+      font-size: 14px;
+      color: #ffffff; }
+      @media only screen and (max-width: 900px) {
+        .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+        .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+        .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+        .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+        .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+        .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3 {
+          font-size: 12px; } }
+      @media only screen and (max-width: 768px) {
+        .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+        .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+        .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+        .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+        .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3,
+        .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h3 {
+          font-size: 14px; } }
+    .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+    .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+    .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+    .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+    .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+    .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4 {
+      font-family: "Raleway-Medium";
+      font-size: 12px;
+      color: #e1e1e1;
+      margin-top: 4px; }
+      @media only screen and (max-width: 900px) {
+        .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+        .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+        .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+        .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+        .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+        .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4 {
+          font-size: 10px; } }
+      @media only screen and (max-width: 768px) {
+        .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+        .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+        .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+        .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+        .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4,
+        .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > h4 {
+          font-size: 12px; } }
+    .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > span,
+    .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > span,
+    .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > span,
+    .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > span,
+    .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > span,
+    .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-title > span {
+      width: 40px;
+      display: block;
+      border: 1.5px solid #ffb932;
+      margin-top: 9px; }
+  .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button,
+  .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button,
+  .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-button,
+  .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-button,
+  .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button,
+  .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button {
+    position: absolute;
+    width: 70px;
+    bottom: 30px;
+    right: 20px; }
+    @media only screen and (max-width: 950px) {
+      .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button,
+      .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button,
+      .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-button,
+      .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-button,
+      .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button,
+      .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button {
+        bottom: 20px;
+        right: 15px; } }
+    .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span,
+    .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span,
+    .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span,
+    .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span,
+    .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span,
+    .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span {
+      width: 30px;
+      height: 30px;
+      display: block;
+      float: left;
+      background-color: #ffb932;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px; }
+      .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span > i,
+      .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span > i,
+      .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span > i,
+      .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span > i,
+      .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span > i,
+      .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a > span > i {
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        color: #333333; }
+    .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span,
+    .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span,
+    .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span,
+    .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span,
+    .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span,
+    .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span {
+      background-color: #353535;
+      margin-right: 10px; }
+      .mx-ready-projects-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span > i,
+      .mx-ready-projects-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span > i,
+      .mx-ready-projects-colect-pro2:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span > i,
+      .mx-ready-projects-colect-pro3:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span > i,
+      .mx-ready-projects-two-big:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span > i,
+      .mx-ready-projects-two-colect-pro1:hover .mx-ready-projects-hover .mx-ready-projects-hover-button a:first-child > span > i {
+        color: #ffffff; }
+
+.mx-small-block .mx-ready-projects-hover-title {
+  margin: 10px !important; }
+  @media only screen and (max-width: 768px) {
+    .mx-small-block .mx-ready-projects-hover-title {
+      margin: 20px !important; } }
+  .mx-small-block .mx-ready-projects-hover-title > h3 {
+    font-size: 12px !important; }
+    @media only screen and (max-width: 900px) {
+      .mx-small-block .mx-ready-projects-hover-title > h3 {
+        font-size: 10px !important; } }
+    @media only screen and (max-width: 768px) {
+      .mx-small-block .mx-ready-projects-hover-title > h3 {
+        font-size: 14px !important; } }
+  .mx-small-block .mx-ready-projects-hover-title > h4 {
+    font-size: 10px !important; }
+    @media only screen and (max-width: 900px) {
+      .mx-small-block .mx-ready-projects-hover-title > h4 {
+        font-size: 8px !important; } }
+    @media only screen and (max-width: 768px) {
+      .mx-small-block .mx-ready-projects-hover-title > h4 {
+        font-size: 12px !important; } }
+  .mx-small-block .mx-ready-projects-hover-title > span {
+    border: 1px solid #ffb932 !important; }
+    @media only screen and (max-width: 768px) {
+      .mx-small-block .mx-ready-projects-hover-title > span {
+        border: 1.5px solid #ffb932 !important; } }
+.mx-small-block .mx-ready-projects-hover-button {
+  bottom: 15px !important;
+  right: 10px !important; }
+  @media only screen and (max-width: 768px) {
+    .mx-small-block .mx-ready-projects-hover-button {
+      bottom: 20px !important;
+      right: 15px !important; } }
 
 /* footer */
 
