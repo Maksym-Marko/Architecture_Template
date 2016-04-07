@@ -26,15 +26,21 @@
 	<link rel="stylesheet" href="add/bootstrap/bootstrap-grid-3.3.1.min.css" />
 	
 	<!-- Popup -->
-	<link rel="stylesheet" href="add/popup/magnific-popup.css" />
+	<link rel="stylesheet" href="add/popup/magnific-popup.css" />	
 	
 	<!-- Fonts -->
 	<link rel="stylesheet" type="text/css" href="fonts/icons/stylesheet.css"/>
 	<link rel="stylesheet" type="text/css" href="fonts/menu-button/stylesheet.css"/>
 	<link rel="stylesheet" type="text/css" href="fonts/arrow-linck/stylesheet.css"/>
 	
-	<!-- STYLES CAROUSEL-->
+	<!-- Styles carousel-->
 	<link rel="stylesheet" href="add/carousel_Touch/prrple.slider.css" type="text/css">
+	
+	<!-- Flexisel Carousel -->
+	<link rel="stylesheet" href="add/flexisel-carousel/style.css"/>
+	
+	<!-- Owl carousel -->
+	<link rel="stylesheet" href="add/owl-carousel/owl.carousel.css">	
 		
 	<script type="text/javascript" src="add/respond.min.js"></script>	
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>		
@@ -45,7 +51,7 @@
 	
 		
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/Thing">
 
 <!-- head -->
 <header class="conteiner-horisontal" id="slider2">
@@ -57,11 +63,11 @@
 			<div class="col-md-10 col-sm-10 col-xs-9">				
 				<div class="mx-headlihe">					
 					<ul class="mx-nav visible-sm-block visible-md-block visible-lg-block">
-						<li class="mx-active-nav"><a href="#">HOME</a></li>
-						<li><a href="#">PROJECTS</a></li>
-						<li><a href="#">WHAT WE DO</a></li>
-						<li><a href="#">ABOUT US</a></li>
-						<li><a href="#">CONTACT US</a></li>
+						<li class="mx-active-nav"><a href="#" itemprop="url">HOME</a></li>
+						<li><a href="#" itemprop="url">PROJECTS</a></li>
+						<li><a href="#" itemprop="url">WHAT WE DO</a></li>
+						<li><a href="#" itemprop="url">ABOUT US</a></li>
+						<li><a href="#" itemprop="url">CONTACT US</a></li>
 					</ul>					
 					<div class="mx-search visible-sm-block visible-md-block visible-lg-block">
 						<!--[if gt IE 6]>
@@ -142,7 +148,7 @@
 
 <!-- our services -->
 <section class="conteiner-horisontal">
-	<div class="conteiner-center mx-our-services-wrap" itemscope itemtype="https://schema.org/Thing">
+	<div class="conteiner-center mx-our-services-wrap">
 		<h1 itemprop="alternateName">Our Services</h1>
 		<span>&</span>
 		<p itemprop="description">Built is the template designed specially for architectures and builders, So start building you web site with built.</p>
@@ -208,26 +214,40 @@
 <section class="conteiner-horisontal">
 	<div class="horisontal-line mx-our-projects-wrap">
 		<div class="conteiner-center mx-our-projects-center">
-			<h2>Our Projects</h2>
+			<h2 itemprop="alternateName">Our Projects</h2>
 			<span>&</span>
-			<p>Some of the projects we have done since it was founded.</p>
+			<p itemprop="description">Some of the projects we have done since it was founded.</p>
 			<nav>
-				<ul>
-					<li><a href="#"><span></span>ALL PROJECTS</a></li>
-					<li><a href="#"><span></span>BUILDINGS</a></li>
-					<li><a href="#"><span></span>INTERIOR DESIGN</a></li>
-					<li><a href="#"><span></span>ISOLATION</a></li>
-					<li><a href="#"><span></span>PLUMBING</a></li>
-					<li><a href="#"><span></span>TILING</a></li>
+				<ul class="visible-sm-block visible-md-block visible-lg-block">
+					<li><a href="#" itemprop="url"><span></span>ALL PROJECTS</a></li>
+					<li><a href="#" itemprop="url"><span></span>BUILDINGS</a></li>
+					<li><a href="#" itemprop="url"><span></span>INTERIOR DESIGN</a></li>
+					<li><a href="#" itemprop="url"><span></span>ISOLATION</a></li>
+					<li><a href="#" itemprop="url"><span></span>PLUMBING</a></li>
+					<li><a href="#" itemprop="url"><span></span>TILING</a></li>
 				</ul>
+				<div class="mx-hide-menu-project visible-xs-block">		
+					<!--[if gt IE 6]>	
+						<span title="Menu" id="mx-show-menu-project"></span>
+					<![endif]-->
+					<i class="menu-button menu-button-m" id="mx-show-menu-project"></i>	
+					<ul>
+						<li><a href="#"><span></span>ALL PROJECTS</a></li>
+						<li><a href="#"><span></span>BUILDINGS</a></li>
+						<li><a href="#"><span></span>INTERIOR DESIGN</a></li>
+						<li><a href="#"><span></span>ISOLATION</a></li>
+						<li><a href="#"><span></span>PLUMBING</a></li>
+						<li><a href="#"><span></span>TILING</a></li>
+					</ul>
+				</div>
 			</nav>
-			<section class="conteiner-center mx-ready-projects">
+			<section class="conteiner-center mx-ready-projects" itemscope itemtype="https://schema.org/Product">
 				<div class="mx-ready-projects-one-pattern-wrap">
 					<div class="mx-ready-projects-big">
 						<div class="mx-ready-projects-hover">
 							<div class="mx-ready-projects-hover-title">
-								<h3><a href="#">CREATIVE BUILDINGS</a></h3>
-								<h4>Interior Design, Buildings</h4>
+								<h3 itemprop="name"><a href="#" itemprop="url">CREATIVE BUILDINGS</a></h3>
+								<h4 itemprop="description">Interior Design, Buildings</h4>
 								<span></span>
 							</div>
 							<div class="mx-ready-projects-hover-button">	
@@ -243,14 +263,14 @@
 								</a>	
 							</div>
 						</div>
-						<img src="img/our_project6.jpg" alt="" />
+						<img src="img/our_project6.jpg" alt="" itemprop="image"/>
 					</div>
 					<div class="mx-ready-projects-colect-pro">
 						<div class="mx-ready-projects-colect-pro1">
 							<div class="mx-ready-projects-hover">
 								<div class="mx-ready-projects-hover-title">
-									<h3><a href="#">CREATIVE BUILDINGS</a></h3>
-									<h4>Interior Design, Buildings</h4>
+									<h3 itemprop="name"><a href="#" itemprop="url">CREATIVE BUILDINGS</a></h3>
+									<h4 itemprop="description">Interior Design, Buildings</h4>
 									<span></span>
 								</div>
 								<div class="mx-ready-projects-hover-button">	
@@ -266,13 +286,13 @@
 									</a>	
 								</div>
 							</div>
-							<img src="img/our_project5.jpg" alt="" />
+							<img src="img/our_project5.jpg" alt="" itemprop="image"/>
 						</div>
 						<div class="mx-ready-projects-colect-pro2">
 							<div class="mx-ready-projects-hover mx-small-block">
 								<div class="mx-ready-projects-hover-title">
-									<h3><a href="#">CREATIVE BUILDINGS</a></h3>
-									<h4>Interior Design, Buildings</h4>
+									<h3 itemprop="name"><a href="#" itemprop="url">CREATIVE BUILDINGS</a></h3>
+									<h4 itemprop="description">Interior Design, Buildings</h4>
 									<span></span>
 								</div>
 								<div class="mx-ready-projects-hover-button">	
@@ -288,13 +308,13 @@
 									</a>	
 								</div>
 							</div>
-							<img src="img/our_project4.jpg" alt="" />
+							<img src="img/our_project4.jpg" alt="" itemprop="image"/>
 						</div>
 						<div class="mx-ready-projects-colect-pro3">
 							<div class="mx-ready-projects-hover mx-small-block">
 								<div class="mx-ready-projects-hover-title">
-									<h3><a href="#">CREATIVE BUILDINGS</a></h3>
-									<h4>Interior Design, Buildings</h4>
+									<h3 itemprop="name"><a href="#" itemprop="url">CREATIVE BUILDINGS</a></h3>
+									<h4 itemprop="description">Interior Design, Buildings</h4>
 									<span></span>
 								</div>
 								<div class="mx-ready-projects-hover-button">	
@@ -310,7 +330,7 @@
 									</a>	
 								</div>
 							</div>
-							<img src="img/our_project3.jpg" alt="" />
+							<img src="img/our_project3.jpg" alt="" itemprop="image"/>
 						</div>						
 					</div>
 				</div>
@@ -318,8 +338,8 @@
 					<div class="mx-ready-projects-two-big">
 						<div class="mx-ready-projects-hover mx-small-block">
 								<div class="mx-ready-projects-hover-title">
-									<h3><a href="#">CREATIVE BUILDINGS</a></h3>
-									<h4>Interior Design, Buildings</h4>
+									<h3 itemprop="name"><a href="#" itemprop="url">CREATIVE BUILDINGS</a></h3>
+									<h4 itemprop="description">Interior Design, Buildings</h4>
 									<span></span>
 								</div>
 								<div class="mx-ready-projects-hover-button">	
@@ -335,14 +355,14 @@
 									</a>	
 								</div>
 							</div>
-						<img src="img/our_project2.jpg" alt="" />
+						<img src="img/our_project2.jpg" alt="" itemprop="image"/>
 					</div>
 					<div class="mx-ready-projects-two-colect-pro">
 						<div class="mx-ready-projects-two-colect-pro1">
 							<div class="mx-ready-projects-hover mx-small-block">
 								<div class="mx-ready-projects-hover-title">
-									<h3><a href="#">CREATIVE BUILDINGS</a></h3>
-									<h4>Interior Design, Buildings</h4>
+									<h3 itemprop="name"><a href="#" itemprop="url">CREATIVE BUILDINGS</a></h3>
+									<h4 itemprop="description">Interior Design, Buildings</h4>
 									<span></span>
 								</div>
 								<div class="mx-ready-projects-hover-button">	
@@ -358,10 +378,10 @@
 									</a>	
 								</div>
 							</div>
-							<img src="img/our_project1.jpg" alt="" />
+							<img src="img/our_project1.jpg" alt=""  itemprop="image"/>
 						</div>
 						<div class="mx-ready-projects-all">
-							<a href="#">
+							<a href="#" itemprop="sameAs">
 								<div class="mx-ready-projects-all-hover"></div>
 								<h4>VIEW ALL PROJECTS<span></span></h4>
 								<i class="arrow-linck arr-lin-arrow"></i>		
@@ -375,13 +395,59 @@
 	</div>	
 </section>
 
+<!-- what they say -->
+<section class="conteiner-horisontal">
+	<div class="horisontal-line mx-what-they-say-wrap" data-stellar-background-ratio="0.3">
+		<!-- carousel -->
+		<div class="mx-what-they-say-corousel-box">	
+			<div class="mx-what-they-say-corousel-bg">	
+				<div class="mx-what-they-say-corousel">
+					<ul id="flexisel">
+					    <li><a href="#"><img src="img/reebok.png" /></a></li>
+					    <li><a href="#"><img src="img/lotto.png" /></a></li>    
+					    <li><a href="#"><img src="img/converse.png" /></a></li>     
+					    <li><a href="#"><img src="img/oyea.png" /></a></li> 
+					    <li><a href="#"><img src="img/adidas.png" /></a></li>                               
+					</ul>
+				</div>
+			</div>	
+		</div>
+
+		<!-- reviews -->	
+		<div class="mx-reviews-wrap">
+			<h2 itemprop="alternateName">What They Say</h2>
+			<span>&</span>
+			<div class="owl-carousel">					
+				<div class="item">
+					<div class="mx-reviews-photo">
+						<img src="img/photo-review.jpg" alt="" />
+					</div>
+					<p>Lectus sem potenti placerat taciti nullam sit proin lacus sociis posuere cras eu nostra a aenean maecenas nibh ad metus. Ad parturient vestibulum mi magnis adipiscing ullamcorper ac a dolor potenti a eget amet a porttitor.</p>
+					<span></span>
+					<h4><a href="#">JOHN DOE <span>- ENVATO</span></a></h4>
+				</div>
+				<div class="item">
+					<div class="mx-reviews-photo">
+						<img src="img/photo-review.jpg" alt="" />
+					</div>
+					<p>Lectus sem potenti placerat taciti nullam sit proin lacus sociis posuere cras eu nostra a aenean maecenas nibh ad metus. Ad parturient vestibulum mi magnis adipiscing ullamcorper ac a dolor potenti a eget amet a porttitor.</p>
+					<span></span>
+					<h4>JOHN DOE <span>- ENVATO</span></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+d<br/>d<br/>d<br/>d<br/>dd<br/>
+
 
 <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 <!--[if gt IE 6]>	
 	<script type="text/javascript" src="add/placeholder_ie.js"></script>
 	<script type="text/javascript" src="add/respond.min.js"></script>	
 <![endif]-->
-<!-- STYLES CAROUSEL-->
+<!-- Styles carousel-->
 <script src="add/carousel_Touch/modernizr.js"></script>
 <script src="add/carousel_Touch/jquery.touchSwipe.1.6.min.js"></script>
 <script src="add/carousel_Touch/prrple.slider.js"></script>
@@ -391,6 +457,12 @@
 
 <!-- Popup -->
 <script src="add/popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Flexisel Carousel -->
+<script src="add/flexisel-carousel/jquery.flexisel.js"></script>
+
+<!-- Owl carousel -->
+<script type="text/javascript" src="add/owl-carousel/owl.carousel.min.js"></script>
 
 <script type="text/javascript" src="js/common.js"></script>
 </body>

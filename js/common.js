@@ -77,7 +77,7 @@ $(document).ready(function(){
 			}
 				setTimeout(MenuDisplayHideNone, 1000);			
 		}		
-	});
+	});	
 	
 	//parallax
 	$.stellar({
@@ -89,6 +89,59 @@ $(document).ready(function(){
 		delegate: "a",
 		type: "image",
 		gallery:{enabled:false}
+	});
+	
+	//show menu poject
+	$('#mx-show-menu-project').click(function(){
+		var MenuProjectHide = $('.mx-hide-menu-project > ul').css('display');
+		
+		if(MenuProjectHide == 'none'){
+			$('.mx-hide-menu-project > ul').css('display', 'block');
+			$('.mx-hide-menu-project > ul').animate({'opacity' : '1'}, 1000);
+		}
+		else{			
+			$('.mx-hide-menu-project > ul').animate({'opacity' : '0'}, 1000);
+			function MenuProjectHideNone() {
+			  	$('.mx-hide-menu-project > ul').css('display', 'none');
+			}
+				setTimeout(MenuProjectHideNone, 1000);			
+		}		
+	});
+	
+	//flexisel Carousel
+	$("#flexisel").flexisel({
+		visibleItems: 5,
+      	enableResponsiveBreakpoints: true,
+     		responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 1
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 2
+            },
+            tablet: { 
+                changePoint:768,
+                visibleItems: 3
+            }
+        }
+    });
+    
+    //review
+    	//owl carousel
+	$(".owl-carousel").owlCarousel({  	
+		loop : true,
+		autoplay : true,
+		autoplayTimeout : 10000,
+		items : 1,
+		smartSpeed : 1000,
+		center : true,
+		autoplaySpeed : 2000,
+		mouseDrag : false,
+		nav : true,
+		navText : '',
+		dots : true
 	});
 })
 
