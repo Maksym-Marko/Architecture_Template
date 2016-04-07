@@ -524,8 +524,8 @@
 								position: absolute;
 								display: block;
 								width: 100%;
-								height: 300px;
-								top: -50px;
+								height: 100%;
+								top: 0px;
 								background-color: $yellow_color;
 							}
 							& a > h4{
@@ -946,5 +946,120 @@
 			background-position: -12px -23.5px;
 		}
 
+	}
+}
+
+/* blog */
+.mx-blog-bg{
+	width: 100%;
+	min-height: 560px;
+	display: block;
+	background-color: #ebebeb;
+	.mx-blog-wrap{
+		width: 95%;
+		display: table;	
+		margin: 0px auto;
+		padding-bottom: 35px;
+		& > h3{
+			width: 100%;
+			font-family: "PlayfairDisplay-Italic";
+			text-align: center;
+			font-size: 32px;
+			margin-top: 50px;
+		}
+		& > span{
+			width: 31px;
+			font-family: "PlayfairDisplay-Italic";
+			text-align: center;
+			font-size: 32px;
+			display: block;
+			margin: 0px auto;
+			&::after{
+				position: absolute;
+				width: 50px;
+				height: 4px;
+				content: "";
+				margin: 22px 0px 0px -90px;
+				background-image: url(../img/line.png);
+	   			background-repeat: no-repeat;
+
+			}
+			&::before{
+				position: absolute;
+				width: 50px;
+				height: 4px;
+				content: "";
+				margin: 22px 0px 0px 45px;
+				background-image: url(../img/line.png);
+	   			background-repeat: no-repeat;
+
+			}
+		}	
+		& > p{
+			font-size: 14px;
+			color: $gray;
+			text-align: center;
+			display: block;
+			margin: 20px 15px;	
+		}
+	}
+}
+.mx-blog-content{
+	width: 100%;
+	display: block;
+	background-color: #ffffff;
+	padding: 30px;
+	margin-top: 20px;
+	& > h2 a{
+		font-family: "Montserrat-Bold";
+		font-size: 14px;
+		color: #000000;
+		&:hover{
+			color: $yellow_color;
+		}
+	}
+	& > p{
+		font-family: "Raleway-Medium";
+		font-size: 13px;
+		color: #656565;
+	}
+	& > span{
+		display: block;
+		margin-top: -10px;
+		 a{
+			font-family: "Montserrat-Bold";
+			font-size: 14px;
+			color: #000000;	
+			&:hover{
+				color: $yellow_color;
+			}		
+		}
+	}
+}
+.mx-view-all-blog-post{
+	width: 200px;
+	display: block;
+	text-align: center;
+	margin: 40px auto;
+	& > a span{
+		font-family: "Montserrat-Bold";
+		font-size: 14px;
+		display: block;
+		float: left;
+		color: #000000;
+		& > i{
+			margin-left: 10px;
+			font-size: 14px;
+			color: #000000;
+		}
+	}
+	& > a:hover{
+		& > span{
+			color: $yellow_color;
+			& > i{
+				color: $yellow_color;
+				margin-left: 15px;
+			}
+		}
 	}
 }
