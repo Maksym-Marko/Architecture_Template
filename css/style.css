@@ -914,6 +914,7 @@ header {
               max-height: 250px; } }
           @media only screen and (max-width: 768px) {
             .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro {
+              position: relative;
               width: 100%;
               float: none;
               max-width: 360px;
@@ -928,7 +929,9 @@ header {
             overflow: hidden; }
             @media only screen and (max-width: 768px) {
               .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-two-colect-pro1 {
-                height: auto; } }
+                height: auto;
+                max-width: 360px;
+                margin: 0px auto; } }
             .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-two-colect-pro1 > img {
               width: 274px;
               margin-left: -50%; }
@@ -948,13 +951,15 @@ header {
             position: relative;
             width: 100%;
             height: 50%;
-            display: table;
+            display: block;
             background-color: #ffffff;
             overflow: hidden; }
             @media only screen and (max-width: 768px) {
               .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all {
                 height: 200px;
-                display: table; } }
+                display: block;
+                max-width: 360px;
+                margin: 0px auto; } }
             .mx-our-projects-wrap .mx-our-projects-center .mx-ready-projects .mx-ready-projects-two-pattern-wrap .mx-ready-projects-two-colect-pro .mx-ready-projects-all a > h4 {
               position: relative;
               width: 100%;
@@ -1368,8 +1373,9 @@ header {
       overflow: hidden;
       z-index: 778; }
       .owl-carousel .item .mx-reviews-photo > img {
+        position: relative;
         width: 100%;
-        z-index: 777; }
+        z-index: 766; }
     .owl-carousel .item > span {
       width: 30px;
       display: block;
@@ -1633,5 +1639,7 @@ header {
       @media only screen and (max-width: 500px) {
         .mx-footer-wrap .mx-copyright > p {
           font-size: 14px; } }
+
+/* safari chang */
 
 /*# sourceMappingURL=style.css.map */
