@@ -93,6 +93,9 @@
 				& >  h3{
 					color: $yellow_color;
 				}
+				& i{
+					color: $yellow_color;
+				}
 			}
 			@media only screen and (max-width: 768px){
 				max-width: 260px;
@@ -916,7 +919,7 @@
 		position: absolute;
 		width: 200px;
 		height: 20px;
-		top: 21%;
+		top: 14%;
 		display: block;
 		left: 50%;
 		margin-left: -100px;

@@ -32,6 +32,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/icons/stylesheet.css"/>
 	<link rel="stylesheet" type="text/css" href="fonts/menu-button/stylesheet.css"/>
 	<link rel="stylesheet" type="text/css" href="fonts/arrow-linck/stylesheet.css"/>
+	<link rel="stylesheet" type="text/css" href="fonts/social/style.css"/>
 	
 	<!-- Styles carousel-->
 	<link rel="stylesheet" href="add/carousel_Touch/prrple.slider.css" type="text/css">
@@ -401,13 +402,13 @@
 		<!-- carousel -->
 		<div class="mx-what-they-say-corousel-box">	
 			<div class="mx-what-they-say-corousel-bg">	
-				<div class="mx-what-they-say-corousel">
-					<ul id="flexisel">
-					    <li><a href="#"><img src="img/reebok.png" /></a></li>
-					    <li><a href="#"><img src="img/lotto.png" /></a></li>    
-					    <li><a href="#"><img src="img/converse.png" /></a></li>     
-					    <li><a href="#"><img src="img/oyea.png" /></a></li> 
-					    <li><a href="#"><img src="img/adidas.png" /></a></li>                   
+				<div class="mx-what-they-say-corousel" itemscope itemtype="http://schema.org/ItemList">
+					<ul id="flexisel" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+					    <li><a href="#" itemprop="url"><img src="img/reebok.png" alt="Reebok" itemprop="image"/></a></li>
+					    <li><a href="#" itemprop="url"><img src="img/lotto.png" alt="Lotto" itemprop="image"/></a></li>    
+					    <li><a href="#" itemprop="url"><img src="img/converse.png" alt="Converse" itemprop="image"/></a></li>     
+					    <li><a href="#" itemprop="url"><img src="img/oyea.png" alt="OYEA" itemprop="image"/></a></li> 
+					    <li><a href="#" itemprop="url"><img src="img/adidas.png" alt="Adidas" itemprop="image"/></a></li>                   
 					</ul>
 				</div>
 			</div>	
@@ -448,32 +449,32 @@
 			<p itemprop="about">Nulla nullam a mattis semper a vestibulum commodo mi consectetur a penatibus.</p>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="mx-blog-content">
+					<article class="mx-blog-content">
 						<h2 itemprop="headline"><a href="#" itemprop="url">Aptent id id inceptos nam pretium</a></h2>
 						<p itemprop="exampleOfWork">Id nulla cum mi diam dui quam mi donec dui parturient cum suscipit amet vel suspendisse fringilla. Donec a vulputate aenean iaculis in id nibh a odio.</p>
 						<span><a href="#" itemprop="url">READ MORE</a></span>				
-					</div>
+					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="mx-blog-content">
+					<article class="mx-blog-content">
 						<h2 itemprop="headline"><a href="#" itemprop="url">Aptent id id inceptos nam pretium</a></h2>
 						<p itemprop="exampleOfWork">Id nulla cum mi diam dui quam mi donec dui parturient cum suscipit amet vel suspendisse fringilla. Donec a vulputate aenean iaculis in id nibh a odio.</p>
 						<span><a href="#" itemprop="url">READ MORE</a></span>				
-					</div>
+					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="mx-blog-content">
+					<article class="mx-blog-content">
 						<h2 itemprop="headline"><a href="#" itemprop="url">Aptent id id inceptos nam pretium</a></h2>
 						<p itemprop="exampleOfWork">Id nulla cum mi diam dui quam mi donec dui parturient cum suscipit amet vel suspendisse fringilla. Donec a vulputate aenean iaculis in id nibh a odio.</p>
 						<span><a href="#" itemprop="url">READ MORE</a></span>				
-					</div>
+					</article>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="mx-blog-content">
+					<article class="mx-blog-content">
 						<h2 itemprop="headline"><a href="#" itemprop="url">Aptent id id inceptos nam pretium</a></h2>
 						<p itemprop="exampleOfWork">Id nulla cum mi diam dui quam mi donec dui parturient cum suscipit amet vel suspendisse fringilla. Donec a vulputate aenean iaculis in id nibh a odio.</p>
 						<span><a href="#" itemprop="url">READ MORE</a></span>				
-					</div>
+					</article>
 				</div>
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="mx-view-all-blog-post"><a href="#" itemprop="url"><span>VIEW ALL BLOG POST</span><span><i class="arrow-linck arr-lin-arrow"></i></span></a></div>
@@ -483,6 +484,39 @@
 	</div>
 </section>
 
+<!-- paralax section two -->
+<section class="conteiner-horisontal">
+	<div class="horisontal-line mx-paralax-two-bg" data-stellar-background-ratio="0.1">
+		<h4>If you like the theme you just purchased in architurex!</h4>
+		<div>
+			<a href="#"><span>BUY NOW</span></a>
+		</div>
+	</div>
+</section>
+	
+<!-- footer -->
+<section class="conteiner-horisontal">
+	<div class="horisontal-line mx-footer-wrap">
+		<div class="mx-footer-logo">
+			<a href="#"><img src="img/logo.png" alt="" /></a>
+		</div>
+		<div class="mx-footer-social">
+			<ul>
+				<li><a href="#" itemprop="sameAs"><span><i class="icon-facebook"></i></span></a></li>
+				<li><a href="#" itemprop="sameAs"><span><i class="icon-twitter"></i></span></a></li>
+				<li><a href="#" itemprop="sameAs"><span><i class="icon-google"></i></span></a></li>
+				<li><a href="#" itemprop="sameAs"><span><i class="icon-instagram"></i></span></a></li>
+				<li><a href="#" itemprop="sameAs"><span><i class="icon-linkedin2"></i></span></a></li>
+			</ul>			
+		</div>
+		<div class="mx-copyright">
+			<p>Copyright © 2015Theme Design by Enes Aktaş</p>
+		</div>
+	</div>
+</section>
+	
+	
+	
 <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 <!--[if gt IE 6]>	
 	<script type="text/javascript" src="add/placeholder_ie.js"></script>
