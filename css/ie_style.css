@@ -37,4 +37,118 @@
 .arhci-fonts{
 	display: none;
 }
-   
+  
+  
+/* icon-zip */
+.mx-ie-a-f-zip{
+	position: absolute;
+	width: 24px;
+	height: 28px;
+	display: block;
+	left: 50px;
+	top: 35px;
+	background-image: url(../img/zip.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;	
+}
+.mx-our-services-wrap .mx-services-block article:hover .mx-ie-a-f-zip{	
+	background-position: 0 -30px;	
+}  
+
+/* icon-pencil */
+.mx-ie-a-f-pencil{
+	position: absolute;
+	width: 24px;
+	height: 28px;
+	display: block;
+	left: 50px;
+	top: 35px;
+	background-image: url(../img/pencil.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.mx-our-services-wrap .mx-services-block article:hover .mx-ie-a-f-pencil{	
+	background-position: 0 -33px;	
+}
+
+/* icon-clock */
+.mx-ie-a-f-clock{
+	position: absolute;
+	width: 24px;
+	height: 28px;
+	display: block;
+	left: 50px;
+	top: 35px;
+	background-image: url(../img/clock.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.mx-our-services-wrap .mx-services-block article:hover .mx-ie-a-f-clock{	
+	background-position: 0 -33px;	
+}
+
+/* icon-house */
+.mx-ie-a-f-house{
+	position: absolute;
+	width: 24px;
+	height: 20px;
+	display: block;
+	left: 50px;
+	top: 35px;
+	background-image: url(../img/house.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.mx-our-services-wrap .mx-services-block article:hover .mx-ie-a-f-house{	
+	background-position: 0 -22px;	
+}
+
+/* projects */
+.mx-ie-a-f-mag_glass{
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	display: block;
+	left: 8px;
+	top: 8px;
+	background-image: url(../img/lupa.png);
+	background-repeat: no-repeat;
+	background-position: 0 -14px;
+}
+.mx-ie-linck{
+	width: 14px;
+	height: 14px;
+	display: block;
+	margin-left: 9px;
+	margin-top: 9px;
+	background-image: url(../img/view.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.mx-ie-lin-arrow{
+	width: 14px;
+	height: 14px;
+	display: block;
+	margin: 0px auto;
+	margin-top: 5px;
+	background-image: url(../img/arrow-all.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;	
+}
+.mx-ready-projects-all:hover .mx-ie-lin-arrow{
+	position: absolute;
+	margin-left: 80%;
+}
+
+/* carousel */
+.nbs-flexisel-nav-right{
+	margin-top: 65px;
+}
+.nbs-flexisel-nav-left{
+	margin-top: 65px;
+}
+
+/* carousel-bg */
+.mx-what-they-say-wrap{
+	border: 1px solid #ffffff;
+}
